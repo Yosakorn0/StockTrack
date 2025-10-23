@@ -1,6 +1,6 @@
 # StockTrack
 
-# 📈 Stock Tracker System (Client–Server with Yahoo Finance API)
+# 📈 Stock Tracker System (Client–Server with Yahoo Finance and feedparser)
 
 This project was created by **Yosakorn Sirisoot**
 
@@ -27,7 +27,8 @@ It connects multiple clients to a single server, which retrieves **live stock pr
 | 💻 **Client**            | Sends user credentials and stock requests to the server, receives formatted live data, and displays it.         |
 | 🖥️ **Server**            | Authenticates users, fetches live stock prices from the Yahoo Finance API, and sends updates with status codes. |
 | 🌐 **Yahoo Finance API** | Provides real-time and historical market data through the `yfinance` Python library.                            |
-
+| 🌐 **feedparser**        | Parses RSS feeds to retrieve the latest market news.                                                            |
+                
 ---
 
 ## 🚀 Features Summary
@@ -36,6 +37,9 @@ It connects multiple clients to a single server, which retrieves **live stock pr
 | ---------------------------- | ---------------------------------------------------------------------------- |
 | 🔐 **User Authentication**   | Server verifies username before granting access.                             |
 | 📊 **Live Stock Prices**     | Retrieves current stock prices directly from Yahoo Finance API (`yfinance`). |
+| 📰 **Market News**           | Retrieves global market news directly from feedparser (`feedparser`).        |
+ |🏢 **Company Info**          | Retrieve company information directly from Yahoo Finance API (`yfinance`).   |
+| 💵 **Dividend Info**         | Retrieve dividend information directly from Yahoo Finance API (`yfinance`).   |
 | 💬 **Status Codes + Emojis** | Communicates results clearly using numeric codes and emoji icons.            |
 | 👥 **Multi-Client Support**  | Each connected client runs on a separate server thread.                      |
 | ⏱️ **Auto Update**           | Fetches updated stock prices every few seconds.                              |
@@ -59,10 +63,19 @@ It connects multiple clients to a single server, which retrieves **live stock pr
 ---
 
 ## 🔄 How It Works
+1. Start the server
+```
+python server.py
+```
+
+2. Start the client 
+```
+python client.py
+```
 
 ### 🧩 Step-by-Step Flow
 
-1. **Client connects** to the server via TCP socket.
+1. **Client connects** to the server via TCP socket. 
 2. **User authentication** — the server validates the username.
 3. **Client sends stock request** — e.g., `AAPL`, `TSLA`.
 4. **Server fetches data** from Yahoo Finance API using `yfinance`.
