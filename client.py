@@ -12,8 +12,7 @@ def receive_messages(sock):
             if not data:
                 print("\n[SERVER CLOSED CONNECTION]")
                 break
-            # Print status code messages clearly
-            print(data, end='')
+            print(data, end='')  # directly print server messages
         except (ConnectionResetError, OSError):
             print("\n[CONNECTION TERMINATED]")
             break
@@ -26,6 +25,7 @@ def start_client():
         try:
             s.connect((HOST, PORT))
             print(f"[CONNECTED] Connected to {HOST}:{PORT}")
+            print("Press Enter to continue")
         except ConnectionRefusedError:
             print("Server not available.")
             return
@@ -35,18 +35,24 @@ def start_client():
 
         while True:
             try:
+                # No prompt, user just enters
                 user_input = input()
                 if not user_input:
                     continue
+
                 s.sendall(user_input.encode())
 
-                if user_input.strip().lower() in ["3", "exit", "quit"]:
+                if user_input.strip().lower() in ["6", "exit", "quit"]:
                     print("[DISCONNECTED] Session terminated.")
                     s.close()
                     sys.exit()
+
             except (KeyboardInterrupt, EOFError):
                 print("\n[CLIENT EXITED]")
                 s.close()
+                break
+            except Exception as e:
+                print(f"[ERROR] {e}")
                 break
 
 if __name__ == "__main__":
