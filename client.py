@@ -12,7 +12,7 @@ def receive_messages(sock):
             if not data:
                 print("\n[SERVER CLOSED CONNECTION]")
                 break
-            print(data, end='')  # directly print server messages
+            print(data, end='') 
         except (ConnectionResetError, OSError):
             print("\n[CONNECTION TERMINATED]")
             break

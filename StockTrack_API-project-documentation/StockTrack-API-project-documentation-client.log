@@ -1,0 +1,254 @@
+PS C:\Users\User\OneDrive\ドキュメント\AIT\Computer Network 2025\StockTrack_API> python client.py
+[CONNECTED] Connected to 127.0.0.1:65432
+Press Enter to continue
+
+Enter your username: Yosakorn
+200 ✅ OK | Welcome Yosakorn! Login successful.
+
+===== STOCK MENU =====
+1. View live stock prices (auto-refresh)
+2. Subscribe to stocks (continuous updates)
+3. View latest global market news
+4. View company info
+5. View dividend info
+6. Exit
+Type 'back' in any submenu to return to this menu.
+Enter choice: 1
+
+Enter stock symbols separated by comma (e.g., AAPL,GOOG): AAPL
+Displaying live stock prices every 5 seconds. Type 'stop' or 'back' to return.
+📊 AAPL: $269.33
+📊 AAPL: $269.33
+📊 AAPL: $269.33
+📊 AAPL: $269.31
+📊 AAPL: $269.31
+📊 AAPL: $269.19
+📊 AAPL: $269.19
+📊 AAPL: $269.19
+📊 AAPL: $269.18
+📊 AAPL: $269.18
+back
+200 ✅ OK | Returning to main menu
+
+===== STOCK MENU =====
+1. View live stock prices (auto-refresh)
+2. Subscribe to stocks (continuous updates)
+3. View latest global market news
+4. View company info
+5. View dividend info
+6. Exit
+Type 'back' in any submenu to return to this menu.
+Enter choice: 2
+
+Enter a stock symbol to subscribe, 'remove' to remove a stock, or 'done' to start updates: AAPL
+200 ✅ OK | Subscribed to AAPL
+
+Enter a stock symbol to subscribe, 'remove' to remove a stock, or 'done' to start updates: MSFT
+200 ✅ OK | Subscribed to MSFT
+
+Enter a stock symbol to subscribe, 'remove' to remove a stock, or 'done' to start updates: AMZN
+200 ✅ OK | Subscribed to AMZN
+
+Enter a stock symbol to subscribe, 'remove' to remove a stock, or 'done' to start updates: done
+Updating subscribed stocks every 5 seconds: AAPL, MSFT, AMZN. Type 'stop', 'back', or 'exit' to return.
+📊 AAPL: $269.11
+📊 MSFT: $507.23
+📊 AMZN: $248.62
+📊 AAPL: $269.11
+📊 MSFT: $507.23
+📊 AMZN: $248.62
+📊 AAPL: $269.12
+📊 MSFT: $507.28
+📊 AMZN: $248.68
+📊 AAPL: $269.12
+📊 MSFT: $507.28
+📊 AMZN: $248.68
+📊 AAPL: $269.1
+📊 MSFT: $507.17
+📊 AMZN: $248.67
+📊 AAPL: $269.1
+📊 MSFT: $507.17
+📊 AMZN: $248.67
+back
+200 ✅ OK | Returning to main menu
+
+===== STOCK MENU =====
+1. View live stock prices (auto-refresh)
+2. Subscribe to stocks (continuous updates)
+3. View latest global market news
+4. View company info
+5. View dividend info
+6. Exit
+Type 'back' in any submenu to return to this menu.
+Enter choice: 3
+
+📰 Fetching latest global market news...
+1. Why this critical Google business may be seriously underestimated on Wall Street — https://www.marketwatch.com/rss/topstories
+🔗 https://www.marketwatch.com/story/why-this-critical-google-business-may-be-seriously-underestimated-on-wall-street-a2c91ce2?mod=mw_rss_topstories
+
+2. Here’s what it means to be rich in this economy — from your 20s to your 80s — https://www.marketwatch.com/rss/topstories
+🔗 https://www.marketwatch.com/story/will-you-ever-feel-rich-this-chart-tells-you-whether-youre-on-track-02b5ab3d?mod=mw_rss_topstories
+
+3. Are taxpayers wasting $86 billion on SilverSneakers and Medicare Advantage goodies they don’t use? — https://www.marketwatch.com/rss/topstories
+🔗 https://www.marketwatch.com/story/are-taxpayers-wasting-86-billion-on-silversneakers-and-medicare-advantage-goodies-they-dont-use-a4bc5d3d?mod=mw_rss_topstories
+
+4. Is the media Trump bump back? New York Times’ subscriber gains suggest so, but it’s complicated. — https://www.marketwatch.com/rss/topstories
+🔗 https://www.marketwatch.com/story/is-the-media-trump-bump-back-new-york-times-subscriber-gains-suggest-so-but-its-complicated-8e98c21f?mod=mw_rss_topstories
+
+5. My siblings don’t earn nearly as much as me. Should my parents leave me less money in their will? — https://www.marketwatch.com/rss/topstories
+🔗 https://www.marketwatch.com/story/i-go-on-too-many-vacations-my-parents-say-im-a-reckless-spender-is-this-enough-to-cut-me-out-of-their-will-f9477df6?mod=mw_rss_topstories
+
+6. Supreme Court justices appear skeptical that Trump tariffs are legal — https://www.cnbc.com/id/100003114/device/rss/rss.html
+🔗 https://www.cnbc.com/2025/11/05/supreme-court-trump-trade-tarrifs-vos.html
+
+7. Trump bashes Mamdani after Democrats sweep key elections — https://www.cnbc.com/id/100003114/device/rss/rss.html
+🔗 https://www.cnbc.com/2025/11/05/trump-elections-democrats-republicans-filibuster.html
+
+8. Tesla sales in Germany have cratered from last year, data shows — https://www.cnbc.com/id/100003114/device/rss/rss.html
+🔗 https://www.cnbc.com/2025/11/05/tesla-musk-germany-sales-down.html
+
+9. Trump nuclear power investment in Westinghouse could lead to IPO with U.S. government as shareholder — https://www.cnbc.com/id/100003114/device/rss/rss.html
+🔗 https://www.cnbc.com/2025/11/05/westinghouse-cameco-brookfield-trump-nuclear-ap1000.html
+
+10. Amazon upheaval: With morale shaken, Jassy looks for next big play after mass layoffs — https://www.cnbc.com/id/100003114/device/rss/rss.html
+🔗 https://www.cnbc.com/2025/11/05/amazon-upheaval-andy-jassy-looks-for-next-big-play-after-mass-layoffs.html
+
+Type 'back' to return to the main menu.
+back
+200 ✅ OK | Returning to main menu
+
+===== STOCK MENU =====
+1. View live stock prices (auto-refresh)
+2. Subscribe to stocks (continuous updates)
+3. View latest global market news
+4. View company info
+5. View dividend info
+6. Exit
+Type 'back' in any submenu to return to this menu.
+Enter choice: 4
+
+Enter a stock symbol to view company info: AAPL
+Name: Apple Inc.
+Sector: Technology
+Industry: Consumer Electronics
+Website: https://www.apple.com
+Type 'back' to return to the main menu.
+back
+200 ✅ OK | Returning to main menu
+
+===== STOCK MENU =====
+1. View live stock prices (auto-refresh)
+2. Subscribe to stocks (continuous updates)
+3. View latest global market news
+4. View company info
+5. View dividend info
+6. Exit
+Type 'back' in any submenu to return to this menu.
+Enter choice: 4
+
+Enter a stock symbol to view company info: AMZN
+Name: Amazon.com, Inc.
+Sector: Consumer Cyclical
+Industry: Internet Retail
+Website: https://www.amazon.com
+Type 'back' to return to the main menu.
+back
+200 ✅ OK | Returning to main menu
+
+===== STOCK MENU =====
+1. View live stock prices (auto-refresh)
+2. Subscribe to stocks (continuous updates)
+3. View latest global market news
+4. View company info
+5. View dividend info
+6. Exit
+Type 'back' in any submenu to return to this menu.
+Enter choice: 5
+
+Enter a stock symbol to view dividend info: JEPQ
+Date | Dividend
+------------------------------
+2025-07-01 | $0.49
+2025-08-01 | $0.44
+2025-09-02 | $0.44
+2025-10-01 | $0.45
+2025-11-03 | $0.48
+Type 'back' to return to the main menu.
+2025-11-03 | $0.48
+Type 'back' to return to the main menu.
+back
+Type 'back' to return to the main menu.
+back
+200 ✅ OK | Returning to main menu
+back
+200 ✅ OK | Returning to main menu
+200 ✅ OK | Returning to main menu
+
+===== STOCK MENU =====
+1. View live stock prices (auto-refresh)
+2. Subscribe to stocks (continuous updates)
+3. View latest global market news
+4. View company info
+2. Subscribe to stocks (continuous updates)
+3. View latest global market news
+4. View company info
+3. View latest global market news
+4. View company info
+5. View dividend info
+4. View company info
+5. View dividend info
+5. View dividend info
+6. Exit
+Type 'back' in any submenu to return to this menu.
+Type 'back' in any submenu to return to this menu.
+Enter choice: 5
+
+Enter a stock symbol to view dividend info: MSFT
+Date | Dividend
+------------------------------
+2024-08-15 | $0.75
+2024-11-21 | $0.83
+2025-02-20 | $0.83
+2025-05-15 | $0.83
+2025-08-21 | $0.83
+Type 'back' to return to the main menu.
+Date | Dividend
+------------------------------
+2024-08-15 | $0.75
+2024-11-21 | $0.83
+2025-02-20 | $0.83
+2025-05-15 | $0.83
+2025-08-21 | $0.83
+Type 'back' to return to the main menu.
+------------------------------
+2024-08-15 | $0.75
+2024-11-21 | $0.83
+2025-02-20 | $0.83
+2025-05-15 | $0.83
+2025-08-21 | $0.83
+Type 'back' to return to the main menu.
+2024-11-21 | $0.83
+2025-02-20 | $0.83
+2025-05-15 | $0.83
+2025-08-21 | $0.83
+Type 'back' to return to the main menu.
+2025-05-15 | $0.83
+2025-08-21 | $0.83
+Type 'back' to return to the main menu.
+Type 'back' to return to the main menu.
+back
+200 ✅ OK | Returning to main menu
+
+===== STOCK MENU =====
+1. View live stock prices (auto-refresh)
+2. Subscribe to stocks (continuous updates)
+3. View latest global market news
+4. View company info
+5. View dividend info
+6. Exit
+Type 'back' in any submenu to return to this menu.
+Enter choice: 6
+[DISCONNECTED] Session terminated.
+
+[CONNECTION TERMINATED]
+PS C:\Users\User\OneDrive\ドキュメント\AIT\Computer Network 2025\StockTrack_API>

@@ -57,7 +57,7 @@ def get_dividend(symbol):
         return div.tail(5).to_dict()
     except Exception:
         return None
-
+    
 def send_status(conn, code, message=""):
     STATUS_CODES = {
         100: "📈 CONTINUE - Command received and being processed",
@@ -113,6 +113,8 @@ def handle_client(conn, addr):
             )
             conn.sendall(menu.encode())
             choice = conn.recv(1024).decode().strip().lower()
+            print(f"[MENU SELECT] {username} selected option: {choice}")
+
             if not choice:
                 send_status(conn, 400, "No input received")
                 continue
@@ -126,15 +128,19 @@ def handle_client(conn, addr):
                     send_status(conn, 400, "No valid symbols entered")
                     continue
 
+                print(f"[USER STOCK SELECTION] {addr} requested: {', '.join(symbols)}")
                 conn.sendall(b"Displaying live stock prices every 5 seconds. Type 'stop' or 'back' to return.\n")
                 conn.settimeout(5)
                 while True:
                     try:
                         for symbol in symbols:
+                            print(f"[FETCH] Getting price for {symbol}...")
                             price = get_live_price(symbol)
                             if price is not None:
+                                print(f"[SEND] Returning {symbol}: ${price} to {username}")
                                 conn.sendall(f"📊 {symbol}: ${price}\n".encode())
                             else:
+                                print(f"[NOT FOUND] {symbol}")
                                 send_status(conn, 404, f"{symbol} not found")
 
                         try:
@@ -191,18 +197,19 @@ def handle_client(conn, addr):
                             send_status(conn, 200, f"{symbol} already in subscription list")
 
                 # Start live updates
-                conn.sendall(
-                    f"Updating subscribed stocks every 5 seconds: {', '.join(subscribed)}. Type 'stop', 'back', or 'exit' to return.\n".encode()
-                )
+                conn.sendall(f"Updating subscribed stocks every 5 seconds: {', '.join(subscribed)}. Type 'stop', 'back', or 'exit' to return.\n".encode())
                 conn.settimeout(5)
 
                 while True:
                     try:
+                        print(f"[FETCH] Getting price for {symbol}...")
                         for symbol in subscribed:
                             price = get_live_price(symbol)
                             if price is not None:
+                                print(f"[SEND] Sending {symbol}: ${price} to {username}")
                                 conn.sendall(f"📊 {symbol}: ${price}\n".encode())
                             else:
+                                print(f"[NOT FOUND] {symbol}: ${price} to {username}")
                                 send_status(conn, 404, f"{symbol} not found")
 
                         try:

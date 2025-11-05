@@ -1,0 +1,113 @@
+PS C:\Users\User\OneDrive\ドキュメント\AIT\Computer Network 2025\StockTrack_API> python server.py
+[SERVER RUNNING] Listening on 127.0.0.1:65432
+[CONNECTED] ('127.0.0.1', 14802)
+[DEBUG] Received username: 'Yosakorn'
+[SERVER STATUS] 200 ✅ OK | Welcome Yosakorn! Login successful.
+[AUTHORIZED] Yosakorn connected from ('127.0.0.1', 14802)
+[MENU SELECT] Yosakorn selected option: 1
+[USER STOCK SELECTION] ('127.0.0.1', 14802) requested: AAPL
+[FETCH] Getting price for AAPL...
+[SEND] Returning AAPL: $269.33 to Yosakorn
+[FETCH] Getting price for AAPL...
+[SEND] Returning AAPL: $269.33 to Yosakorn
+[FETCH] Getting price for AAPL...
+[SEND] Returning AAPL: $269.33 to Yosakorn
+[FETCH] Getting price for AAPL...
+[SEND] Returning AAPL: $269.31 to Yosakorn
+[FETCH] Getting price for AAPL...
+[SEND] Returning AAPL: $269.31 to Yosakorn
+[FETCH] Getting price for AAPL...
+[SEND] Returning AAPL: $269.19 to Yosakorn
+[FETCH] Getting price for AAPL...
+[SEND] Returning AAPL: $269.19 to Yosakorn
+[FETCH] Getting price for AAPL...
+[SEND] Returning AAPL: $269.19 to Yosakorn
+[FETCH] Getting price for AAPL...
+[SEND] Returning AAPL: $269.18 to Yosakorn
+[FETCH] Getting price for AAPL...
+[SEND] Returning AAPL: $269.18 to Yosakorn
+[SERVER STATUS] 200 ✅ OK | Returning to main menu
+[MENU SELECT] Yosakorn selected option: 2
+[SERVER STATUS] 200 ✅ OK | Subscribed to AAPL
+[SERVER STATUS] 200 ✅ OK | Subscribed to MSFT
+[SERVER STATUS] 200 ✅ OK | Subscribed to AMZN
+[FETCH] Getting price for DONE...
+[SERVER STATUS] 200 ✅ OK | Subscribed to AMZN
+[FETCH] Getting price for DONE...
+[SEND] Sending AAPL: $269.11 to Yosakorn
+[FETCH] Getting price for DONE...
+[SEND] Sending AAPL: $269.11 to Yosakorn
+[SEND] Sending MSFT: $507.23 to Yosakorn
+[SEND] Sending AAPL: $269.11 to Yosakorn
+[SEND] Sending MSFT: $507.23 to Yosakorn
+[SEND] Sending MSFT: $507.23 to Yosakorn
+[SEND] Sending AMZN: $248.62 to Yosakorn
+[FETCH] Getting price for AMZN...
+[SEND] Sending AAPL: $269.11 to Yosakorn
+[SEND] Sending MSFT: $507.23 to Yosakorn
+[SEND] Sending AMZN: $248.62 to Yosakorn
+[FETCH] Getting price for AMZN...
+[SEND] Sending MSFT: $507.23 to Yosakorn
+[SEND] Sending AMZN: $248.62 to Yosakorn
+[FETCH] Getting price for AMZN...
+[SEND] Sending AAPL: $269.12 to Yosakorn
+[SEND] Sending AMZN: $248.62 to Yosakorn
+[FETCH] Getting price for AMZN...
+[SEND] Sending AAPL: $269.12 to Yosakorn
+[FETCH] Getting price for AMZN...
+[SEND] Sending AAPL: $269.12 to Yosakorn
+[SEND] Sending AAPL: $269.12 to Yosakorn
+[SEND] Sending MSFT: $507.28 to Yosakorn
+[SEND] Sending MSFT: $507.28 to Yosakorn
+[SEND] Sending AMZN: $248.68 to Yosakorn
+[SEND] Sending AMZN: $248.68 to Yosakorn
+[FETCH] Getting price for AMZN...
+[SEND] Sending AAPL: $269.12 to Yosakorn
+[SEND] Sending MSFT: $507.28 to Yosakorn
+[SEND] Sending AMZN: $248.68 to Yosakorn
+[FETCH] Getting price for AMZN...
+[SEND] Sending AAPL: $269.1 to Yosakorn
+[SEND] Sending MSFT: $507.17 to Yosakorn
+[SEND] Sending AMZN: $248.67 to Yosakorn
+[FETCH] Getting price for AMZN...
+[SEND] Sending AAPL: $269.1 to Yosakorn
+[SEND] Sending MSFT: $507.17 to Yosakorn
+[SEND] Sending AMZN: $248.68 to Yosakorn
+[FETCH] Getting price for AMZN...
+[SEND] Sending AAPL: $269.1 to Yosakorn
+[SEND] Sending MSFT: $507.17 to Yosakorn
+[SEND] Sending AMZN: $248.67 to Yosakorn
+[FETCH] Getting price for AMZN...
+[SEND] Sending AAPL: $269.1 to Yosakorn
+[SEND] Sending MSFT: $507.17 to Yosakorn
+[FETCH] Getting price for AMZN...
+[SEND] Sending AAPL: $269.1 to Yosakorn
+[SEND] Sending MSFT: $507.17 to Yosakorn
+[SEND] Sending AMZN: $248.67 to Yosakorn
+[FETCH] Getting price for AMZN...
+[SEND] Sending AAPL: $269.1 to Yosakorn
+[SEND] Sending MSFT: $507.17 to Yosakorn
+[SEND] Sending MSFT: $507.17 to Yosakorn
+[SEND] Sending AMZN: $248.67 to Yosakorn
+[FETCH] Getting price for AMZN...
+[SEND] Sending AAPL: $269.1 to Yosakorn
+[SEND] Sending MSFT: $507.17 to Yosakorn
+[FETCH] Getting price for AMZN...
+[SEND] Sending AAPL: $269.1 to Yosakorn
+[SEND] Sending MSFT: $507.17 to Yosakorn
+[SEND] Sending MSFT: $507.17 to Yosakorn
+[SEND] Sending AMZN: $248.67 to Yosakorn
+[SERVER STATUS] 200 ✅ OK | Returning to main menu
+[MENU SELECT] Yosakorn selected option: 3
+[SERVER STATUS] 200 ✅ OK | Returning to main menu
+[MENU SELECT] Yosakorn selected option: 4
+[SERVER STATUS] 200 ✅ OK | Returning to main menu
+[MENU SELECT] Yosakorn selected option: 4
+[SERVER STATUS] 200 ✅ OK | Returning to main menu
+[MENU SELECT] Yosakorn selected option: 5
+[SERVER STATUS] 200 ✅ OK | Returning to main menu
+[MENU SELECT] Yosakorn selected option: 5
+[SERVER STATUS] 200 ✅ OK | Returning to main menu
+[MENU SELECT] Yosakorn selected option: 6
+[SERVER STATUS] 2000 🛑 OK (logout) - Successful logout
+[SESSION CLOSED] Yosakorn from ('127.0.0.1', 14802)
