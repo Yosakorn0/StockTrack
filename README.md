@@ -75,18 +75,6 @@ python server.py
 python client.py
 ```
 
-1. Start the server
-
-```
-python server.py
-```
-
-2. Start the client
-
-```
-python client.py
-```
-
 ### 🧩 Step-by-Step Flow
 
 1. **Client connects** to the server via TCP socket.
