@@ -38,11 +38,8 @@ It connects multiple clients to a single server, which retrieves **live stock pr
 | 🔐 **User Authentication** | Server verifies username before granting access.                             |
 | 📊 **Live Stock Prices**   | Retrieves current stock prices directly from Yahoo Finance API (`yfinance`). |
 | 📰 **Market News**         | Retrieves global market news directly from feedparser (`feedparser`).        |
-
-<<<<<<< HEAD
 |🏢 **Company Info** | Retrieve company information directly from Yahoo Finance API (`yfinance`). |
 | 💵 **Dividend Info** | Retrieve dividend information directly from Yahoo Finance API (`yfinance`). |
-=======
 | 📰 **Market News** | Retrieves global market news directly from feedparser (`feedparser`). |
 | 🏢 **Company Info** | Retrieve company information directly from Yahoo Finance API (`yfinance`). |
 | 💵 **Dividend Info** | Retrieve dividend information directly from Yahoo Finance API (`yfinance`). |
