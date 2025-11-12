@@ -47,12 +47,6 @@ It connects multiple clients to a single server, which retrieves **live stock pr
 | 🏢 **Company Info** | Retrieve company information directly from Yahoo Finance API (`yfinance`). |
 | 💵 **Dividend Info** | Retrieve dividend information directly from Yahoo Finance API (`yfinance`). |
 
-> > > > > > > f8b1f59 (Add documentation and edit server side for log input)
-> > > > > > > | 💬 **Status Codes + Emojis** | Communicates results clearly using numeric codes and emoji icons. |
-> > > > > > > | 👥 **Multi-Client Support** | Each connected client runs on a separate server thread. |
-> > > > > > > | ⏱️ **Auto Update** | Fetches updated stock prices every few seconds. |
-> > > > > > > | 🛑 **Logout & Exit** | Clients can log out or terminate sessions safely. |
-
 ---
 
 ## 🧾 Status Code Reference
